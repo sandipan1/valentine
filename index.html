@@ -263,7 +263,14 @@
       });
 
       setTimeout(() => {
-        alert("YAY 💕 I can’t wait for Valentine’s Day with you!");
+        card.innerHTML = `
+          <div style="margin: 10px 0;">
+            <img src="together.jpeg" alt="together" style="width: 100%; max-width: 300px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+          </div>
+          <h2 style="margin-top: 15px; font-size: 1.5rem;">Sandipan says...</h2>
+          <p style="font-size: 1.1rem; color: #4a1c2f; margin-bottom: 15px;">YAY 💕 I can’t wait for<br>Valentine’s Day with you!</p>
+          <div style="font-size: 0.85rem; color: #777; font-style: italic;">Forever & Always ✨</div>
+        `;
       }, 500);
     });
 
